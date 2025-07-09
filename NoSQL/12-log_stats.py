@@ -8,7 +8,7 @@ if __name__ == "__main__":
     client = MongoClient('mongodb://127.0.0.1:27017')
     nginx = client.logs.nginx
 
-    method = ["GET", "POST", "PUT", "PATCH", "DELETE"]
+    methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     print(f"{nginx.count_documents({})} logs")
     print("Methods:")
 
